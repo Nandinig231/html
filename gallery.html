@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Blog Gallery</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px;
+            color: #222;
+        }
+
+        .gallery {
+            width: 90%;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+
+            object-fit: cover;
+
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Tablet */
+
+        @media (max-width: 768px) {
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        } 
+
+        /* Mobile */
+
+        @media (max-width: 500px) {
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>🌍 Travel Blog Photo Gallery</h1>
+
+
+    <div class="gallery">
+
+        <!-- Mountain -->
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+             alt="Mountain">
+
+        <!-- Beach -->
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+             alt="Beach">
+
+        <!-- Paris -->
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34"
+             alt="Paris">
+
+        <!-- Lake -->
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
+             alt="Lake">
+
+        <!-- Forest -->
+        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b"
+             alt="Forest">
+
+        <!-- Desert -->
+        <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35"
+             alt="Desert">
+
+        <!-- Waterfall -->
+        <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716"
+             alt="Waterfall">
+
+        <!-- City -->
+        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390"
+             alt="City">
+
+        <!-- Island -->
+        <img src="https://images.unsplash.com/photo-1540202404-a2f29016b523"
+             alt="Island">
+
+    </div>
+
+</body>
+</html>
